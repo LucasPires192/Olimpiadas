@@ -1,0 +1,14 @@
+#Exercicio do plano de internet
+#Tarefas Programação Nível Júnior 2021 fase 1
+
+quota = int(input("Digite a quota mensal da internet: "))
+meses = int(input("Digite os meses utilizados: "))
+mega = []
+sobra = 0
+
+for i in range(meses):
+    sobra += quota
+    mega.append(i)
+    mega[i] = int(input(f"Digite a quantidade de internet utilizada no mes {i + 1} :"))
+    sobra -= mega[i]
+print(sobra + quota)
