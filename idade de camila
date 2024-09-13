@@ -1,0 +1,11 @@
+#Exercicio do idade de camila
+#Tarefas Programação Nível Júnior 2021 fase 1
+
+idade = [0 , 0 , 0]
+idade[0] = int(input("Digite a idade da primeira: "))
+idade[1] = int(input("Digite a idade da segunda: "))
+idade[2] = int(input("Digite a idade da terceira: "))
+
+idade.sort()
+
+print(idade[1])
