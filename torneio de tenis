@@ -1,0 +1,27 @@
+#Exercicio do torneio de tenis
+#Tarefas Programação Nível Júnior 2021 fase 1
+
+partida1 = input("Resultado da 1° partida: ").lower()
+partida2 = input("Resultado da 2° partida: ").lower()
+partida3 = input("Resultado da 3° partida: ").lower()
+partida4 = input("Resultado da 4° partida: ").lower()
+partida5 = input("Resultado da 5° partida: ").lower()
+partida6 = input("Resultado da 6° partida: ").lower()
+resultado = [partida1 , partida2 , partida3 , partida4 , partida5 , partida6]
+vitorias = 0
+derrotas = 0
+
+for i in range(len(resultado)):
+  if resultado[i] == "v":
+    vitorias += 1
+  if resultado[i] == "p":
+    derrotas += 1
+
+if vitorias == 5 or vitorias == 6:
+  print("Grupo 1")
+elif vitorias == 3 or vitorias == 4:
+  print("Grupo 2")
+elif vitorias == 1 or vitorias == 2:
+  print("Grupo 3")
+else:
+  print("Infelizmente não passou no teste")
